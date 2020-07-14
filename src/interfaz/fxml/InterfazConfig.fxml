@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.ControllerConfig">
+   <content>
+      <VBox prefHeight="516.0" prefWidth="597.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="46.0" prefWidth="597.0" text="Configuración" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="596.0" text="Nombre de la empresa:" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <graphic>
+                  <TextField fx:id="txtNombre" alignment="CENTER" prefHeight="25.0" prefWidth="372.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="596.0" text="Dirección de la empresa:" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <graphic>
+                  <TextField fx:id="txtDireccion" alignment="CENTER" prefHeight="25.0" prefWidth="343.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="596.0" text="CIF/NIF de la empresa:" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <graphic>
+                  <TextField fx:id="txtCif" alignment="CENTER" prefHeight="25.0" prefWidth="367.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="596.0" text="Teléfono de la empresa:" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <graphic>
+                  <TextField fx:id="txtTelefono" alignment="CENTER" prefHeight="25.0" prefWidth="379.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="596.0" text="Plantilla del Ticket" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+            <TextArea fx:id="txtPlantillaTicket" prefHeight="196.0" prefWidth="400.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <Label alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="596.0" text="Plantilla del producto:" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <graphic>
+                  <TextField fx:id="txtPlantillaProducto" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="431.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="46.0" prefWidth="597.0" text="Configuración de la web" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="596.0" text="Dirección Web:" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <graphic>
+                  <TextField fx:id="txtDireccionWeb" alignment="CENTER" prefHeight="25.0" prefWidth="431.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="501.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="596.0" text="Consumer Key:" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <graphic>
+                  <TextField fx:id="txtConsumerKey" alignment="CENTER" prefHeight="25.0" prefWidth="431.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="491.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="596.0" text="Consumer Secret:" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <graphic>
+                  <TextField fx:id="txtConsumerSecret" alignment="CENTER" prefHeight="25.0" prefWidth="431.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="403.0">
+               <children>
+                  <Button fx:id="btGuardarConfig" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" text="Guardar configuración" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="btCancelar" alignment="CENTER" cancelButton="true" contentDisplay="BOTTOM" mnemonicParsing="false" text="Cancelar" textAlignment="CENTER" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

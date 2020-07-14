@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="373.0" minWidth="10.0" prefWidth="364.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="336.0" minWidth="10.0" prefWidth="91.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="110.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Label fx:id="modelo" layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="356.0" text="Modelo" />
+      <Label fx:id="precio" layoutX="277.0" layoutY="14.0" prefHeight="17.0" prefWidth="72.0" text="Label" textAlignment="CENTER" GridPane.columnIndex="1" />
+      <Button fx:id="aniadirAlCarro" layoutX="408.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Añadir al carro" textAlignment="CENTER" GridPane.columnIndex="2" />
+   </children>
+</GridPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.ContollerDialogEnvio">
+   <content>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label contentDisplay="RIGHT" text="Nombre: ">
+               <graphic>
+                  <TextField fx:id="txtNombreEnvio" prefHeight="25.0" prefWidth="298.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label contentDisplay="RIGHT" text="Dirección: ">
+               <graphic>
+                  <TextField fx:id="txtDireccionEnvio" prefHeight="25.0" prefWidth="298.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label contentDisplay="RIGHT" text="Dirección 2:">
+               <graphic>
+                  <TextField fx:id="txtDireccion2Envio" prefHeight="25.0" prefWidth="298.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label contentDisplay="RIGHT" text="Teléfono: ">
+               <graphic>
+                  <TextField fx:id="txtEnvioTelefono" prefHeight="25.0" prefWidth="298.0" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label contentDisplay="RIGHT" text="Precio envío:">
+               <graphic>
+                  <TextField fx:id="txtEnvioPrecio" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btGuardarEnvio" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" text="Guardar datos envío" textAlignment="CENTER" wrapText="true" />
+         </children>
+      </VBox>
+   </content>
+   <header>
+      <Label alignment="CENTER" text="Rellena los datos del envío" textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </Label>
+   </header>
+</DialogPane>

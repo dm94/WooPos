@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="373.0" minWidth="10.0" prefWidth="311.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="336.0" minWidth="10.0" prefWidth="69.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="67.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="76.0" />
+      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="68.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Button fx:id="borrarDelCarro" layoutX="408.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Borrar" textAlignment="CENTER" GridPane.columnIndex="4" />
+      <Spinner fx:id="spCantidad" editable="true" prefHeight="25.0" prefWidth="62.0" GridPane.columnIndex="2">
+         <valueFactory>
+            <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="1" initialValue="1" max="999" min="1" />
+         </valueFactory>
+      </Spinner>
+      <TextField fx:id="modelo" prefHeight="25.0" prefWidth="269.0" />
+      <TextField fx:id="precio" GridPane.columnIndex="1" />
+      <Label fx:id="totalPrecio" text="Label" GridPane.columnIndex="3" />
+   </children>
+</GridPane>
