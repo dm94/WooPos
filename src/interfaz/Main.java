@@ -16,7 +16,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle("WooPOS");
+        this.primaryStage.setTitle("WooTPV");
 
         Parent root = FXMLLoader.load(getClass().getResource("fxml/Principal.fxml"));
 
