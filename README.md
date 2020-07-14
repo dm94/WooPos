@@ -1,4 +1,4 @@
-# WooPos
+# WooTPV
  Point of sale for Woocommerce
  
 ## Libraries
