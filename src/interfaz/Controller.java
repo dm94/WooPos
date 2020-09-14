@@ -114,6 +114,8 @@ public class Controller {
         if (listaCompra != null) {
             for (Product producto : listaCompra) {
                 if (producto != null) {
+                    if (producto.getStockQuantity() == null) producto.setStockQuantity(1);
+
                     subtotal += Double.parseDouble(producto.getPrice()) * producto.getStockQuantity();
                 }
             }

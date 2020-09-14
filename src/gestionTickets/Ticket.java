@@ -1,5 +1,7 @@
 package gestionTickets;
 
+import com.github.anastaciocintra.escpos.EscPos;
+import com.github.anastaciocintra.output.PrinterOutputStream;
 import entities.Product;
 import interfaz.Config;
 
@@ -75,12 +77,23 @@ public class Ticket {
 
         System.out.println(plantilla);
 
-        JTextArea textArea = new JTextArea();
-        textArea.setLineWrap(true);
-        textArea.append(plantilla);
         try {
-            textArea.print();
-        } catch (PrinterException e) {
+            PrintService[] printServices = PrintServiceLookup.lookupPrintServices(null, null);
+            PrintService defaultPrintService = PrintServiceLookup.lookupDefaultPrintService();
+            PrintRequestAttributeSet attrib = new HashPrintRequestAttributeSet();
+            PrintService selectedPrintService = ServiceUI.printDialog(null, 150, 150, printServices, defaultPrintService, null, attrib);
+            if (selectedPrintService == null) {
+                selectedPrintService = defaultPrintService;
+            }
+
+            PrinterOutputStream printerOutputStream = new PrinterOutputStream(selectedPrintService);
+            EscPos escpos = new EscPos(printerOutputStream);
+            escpos.writeLF(plantilla);
+            escpos.feed(5);
+            escpos.cut(EscPos.CutMode.FULL);
+            escpos.close();
+            printerOutputStream.close();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

@@ -27,7 +27,7 @@ public class Config {
             "Conserve este ticket. Plazo maximo 15 días para cambiar desde su compra\n"+
             "No se devolvera el dinero en efectivo, se hará vale. \n"+
             "Los articulos deben estar en perfecto estado y sin uso. \n"+
-            "{{separador}}\n"+
+            "====================================================\n"+
             "\n"+
             "\n";
 

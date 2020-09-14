@@ -65,7 +65,7 @@ public class ProductListViewCell extends ListCell<Product> {
     }
 
     private void anidairAlCarro() {
-        if (product == null || controller == null) return;
+        if (product == null || controller == null)  return;
 
         controller.aniadirProducto(product);
     }
